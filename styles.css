@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.navbar {
+    background: red;
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.header {
+    background: blue;
+}
+
+.main-content {
+    background: green;
+}
