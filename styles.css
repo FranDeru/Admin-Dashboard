@@ -7,7 +7,9 @@
     box-sizing: border-box;
     --main-color: rgb(19, 155, 96);
     --white-color: #FFF;
-    --grey-color: rgb(188, 187, 187);
+    --darkGrey-color: rgb(170, 170, 170);
+    --lightGrey-color: rgb(224, 218, 218);
+    --yellow-color: rgb(255, 200, 0);
     --nav-font: 'Rubik', sans-serif;
     --main-font: 'Roboto', sans-serif;
 }
@@ -80,7 +82,6 @@ html {
     grid-template-rows: repeat(2fr);
     background-color: var(--white-color);
     padding: 20px 40px;
-    box-shadow: 4px 4px 4px var(--grey-color);
 }
 
 .search-bar {
@@ -101,7 +102,7 @@ html {
     height: 30px;
     border-radius: 20px;
     border: none;
-    background-color: var(--grey-color);
+    background-color: var(--lightGrey-color);
     padding-left: 20px;
 }
 
@@ -159,3 +160,31 @@ html {
     color: var(--white-color);
 }
 
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1fr, 2);
+    background: var(--lightGrey-color);
+    box-shadow: 4px 4px 10px inset var(--darkGrey-color);
+}
+
+.Projects {
+    grid-area: 1 / 1 / 3 / 2;
+    padding: 40px 20px;
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: var(--white-color);
+    border-left: 4px solid var(--yellow-color);
+    border-radius: 10px;
+    width: 325px;
+    height: 170px;
+    margin: 10px;
+    padding: 10px;
+}
