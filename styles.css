@@ -113,7 +113,7 @@ html {
     justify-content: space-around;
 }
 
-.settings-element .profil-img {
+.profil-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -170,7 +170,7 @@ html {
 
 .Projects {
     grid-area: 1 / 1 / 3 / 2;
-    padding: 40px 20px;
+    padding: 40px 10px 0 20px;
 }
 
 .flex-section {
@@ -180,6 +180,9 @@ html {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: var(--white-color);
     border-left: 4px solid var(--yellow-color);
     border-radius: 10px;
@@ -187,4 +190,72 @@ html {
     height: 170px;
     margin: 10px;
     padding: 10px;
+}
+
+.project > p {
+    color: var(--darkGrey-color);
+}
+
+.project-options {
+    align-self: flex-end;
+}
+
+.annoucements {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 40px 40px 0 0;
+}
+
+.annoucements > div {
+    background: var(--white-color);
+    margin: 20px 0 0 0;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.annoucements > div > p {
+    color: var(--darkGrey-color);
+}
+
+.annoucements > div > hr {
+    margin: 10px;
+}
+
+.annoucements > div > h2 {
+    margin-bottom: 5px;
+}
+
+.trending {
+    grid-area: 2 / 2/ 3 / 3;
+    padding-right: 40px;
+}
+
+.trending > div {
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.trend-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--main-color);
+    margin-right: 40px;
+}
+
+.trend > div > p:nth-child(2) {
+    color: var(--darkGrey-color);
+}
+
+.trend > div > p:nth-child(1) {
+    font-weight: bold;
+    color: black;
 }
